@@ -226,7 +226,7 @@ if __name__ == '__main__':
     parser.add_argument('--elastic-type',
                         required=False,
                         type=str,
-                        default='test_type',
+                        default='_doc',
                         help='Your entry type for elastic')
     parser.add_argument('--max-rows',
                         type=int,
@@ -241,7 +241,7 @@ if __name__ == '__main__':
                         help='If you want to have index and you have it in csv, this the argument to point to it')
     parser.add_argument('--delimiter',
                         type=str,
-                        default=";",
+                        default=",",
                         help='If you want to have a different delimiter than ;')
 
     parsed_args = parser.parse_args()
